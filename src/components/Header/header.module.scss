@@ -1,0 +1,30 @@
+.header_container{
+  background-color: #0067A3 ;
+  display: flex;
+  justify-content: center;
+}
+
+.header_container__content{
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 1235px;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 20px;
+}
+
+.header_logo{
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .header_logo{
+    display: none;
+  }
+}

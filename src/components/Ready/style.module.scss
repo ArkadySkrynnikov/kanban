@@ -1,0 +1,52 @@
+.ready_container{
+  width: 282px;
+  height: fit-content;
+  border-radius: 10px 10px 10px 10px ;
+  background: #EBECF0;
+  padding-top: 12px;
+  z-index: 1;
+}
+
+.ready_taskList__container{
+  padding-left: 12px;
+  padding-right: 12px;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+.ready_title{
+  padding-left: 12px;
+  color: #000;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button_position{
+  padding-left: 12px;
+  position: absolute;
+  bottom: 7px;
+}
+
+.ready_activeElements_container{
+  border-radius: 0px 0px 10px 10px ;
+  height: 100px;
+  background: #EBECF0;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .ready_container{
+    width: calc(100vw - 12px);
+    height: fit-content;
+    border-radius: 10px 10px 10px 10px ;
+    background: #EBECF0;
+    padding-top: 12px;
+    z-index: 1;
+    margin-bottom: 100px;
+  }
+
+}

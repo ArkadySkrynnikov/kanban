@@ -1,0 +1,50 @@
+@mixin footer_text{
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  background-color: #0067A3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  width: 1235px;
+}
+
+.footer_info{
+  padding-left: 21px;
+}
+
+.footer_info__activeTasks{
+  @include footer_text;
+  padding-right: 36px;
+}
+
+.footer_info__finished{
+  @include footer_text;
+}
+
+.footer_info__creator{
+  @include footer_text;
+  padding-right: 19px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer{
+    display: none;
+  }
+}

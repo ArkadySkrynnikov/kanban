@@ -1,0 +1,19 @@
+.input{
+  width: 246px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline:none;
+  background: #FFFFFF;
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 0 0 12px;
+}
+input[type="text"] {
+  padding-block: 0;
+  padding-inline: 0;
+}
