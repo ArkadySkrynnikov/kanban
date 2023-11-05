@@ -1,6 +1,6 @@
 Kanban
 
-React + TypeScript + SCSS + Vite
+React + React Router + TypeScript + SCSS + Vite
 
 `npm run dev` to run dev server 
 
