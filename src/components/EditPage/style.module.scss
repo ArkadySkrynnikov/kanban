@@ -35,10 +35,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  word-break: break-word;
 }
 
 .editPage_title_container{
   margin-bottom: 35px;
+  width: calc(100% - 30px - 10px);;
 }
 
 .editPage_description{

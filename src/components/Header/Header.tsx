@@ -8,7 +8,7 @@ function Header(): ReactElement {
             <header className={style.header_container}>
                 <div className={style.header_container__content}>
                     <span className={style.header_logo}>Awesome Kanban Board</span>
-                    {/*<button onClick={()=>localStorage.clear()}>Clear</button>*/}
+                    <button onClick={()=>localStorage.clear()}>Clear</button>
                     <UserAvatar />
                 </div>
             </header>

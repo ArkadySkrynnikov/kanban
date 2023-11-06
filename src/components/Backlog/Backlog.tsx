@@ -12,7 +12,7 @@ const Backlog: FunctionComponent<IBacklogProps> = ({ backlogTasks, setBacklogTas
     const [inputValue, setInputValue] = useState("");
 
     const addBacklogTask = () => {
-        if(inputValue){
+        if(inputValue && inputValue.trim()){
             setBacklogTasks([...backlogTasks,{
                 id: uuid(),
                 status:"Backlog",
@@ -29,20 +29,20 @@ const Backlog: FunctionComponent<IBacklogProps> = ({ backlogTasks, setBacklogTas
                 <span className={style.backlog_title}>Backlog</span>
                 <div className={style.backlog_taskList__container}>
                     <TaskList tasks={backlogTasks}/>
-                </div>
-                <div className={style.backlog_activeElements_container}>
-                    <div className={style.input_position}>
                         {
                             buttonState
-                                &&
-                            <Input
-                                inputValue={inputValue}
-                                setInputValue={setInputValue}
-                                addBacklogTask={addBacklogTask}
-                                setButtonState={setButtonState}
-                            />
+                            &&
+                            <div className={style.input_position}>
+                                <Input
+                                    inputValue={inputValue}
+                                    setInputValue={setInputValue}
+                                    addBacklogTask={addBacklogTask}
+                                    setButtonState={setButtonState}
+                                />
+                            </div>
                         }
-                    </div>
+                </div>
+                <div className={style.backlog_activeElements_container}>
                     <div className={style.button_position}>
                         {
                             buttonState

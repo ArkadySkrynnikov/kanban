@@ -24,10 +24,10 @@ function App() {
         return JSON.parse(localStorage.getItem('Finished')!) || []
     });
 
-    const [backlogDescriptionState, setBacklogDescriptionState] = useState("");
-    const [readyDescriptionState, setReadyDescriptionState] = useState("");
-    const [inProgressDescriptionState, setInProgressDescriptionState] = useState("");
-    const [finishedDescriptionState, setFinishedDescriptionState] = useState("");
+    const [backlogDescriptionState, setBacklogDescriptionState] = useState<string>("");
+    const [readyDescriptionState, setReadyDescriptionState] = useState<string>("");
+    const [inProgressDescriptionState, setInProgressDescriptionState] = useState<string>("");
+    const [finishedDescriptionState, setFinishedDescriptionState] = useState<string>("");
 
     useEffect(()=> {
         localStorage.setItem('Backlog', JSON.stringify(backlogTasks))
