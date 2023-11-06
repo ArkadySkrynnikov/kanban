@@ -23,6 +23,11 @@
   line-height: normal;
 }
 
+.link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .header_logo{
     display: none;
